@@ -11,3 +11,6 @@ find the different part in two sets
 
 fetch-raw-data.py:
 if the query is in common part, record this piece of data
+
+split-file.py:
+if the query in file "large-data.csv" is the same as the query in "QC1.csv", record the piece of data in a file. create a file named after the order of the query in list of "QC1.csv"
