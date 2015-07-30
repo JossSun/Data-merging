@@ -1,4 +1,6 @@
 # Data-merging
+duplication removal :
+a much faster version of finding distinguished queries using set
 
 distinguish-queries.py:
 find distinguished queries in files 
