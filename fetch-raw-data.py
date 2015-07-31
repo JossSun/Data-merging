@@ -1,24 +1,31 @@
 import csv
-qlist = []
-num = 0
-f1 = open("QC1.csv", "r")
+# find chaji of A1 and QC1
+a = []
+b = []
+f1 = open("A1.csv","r")
 rf1 = csv.reader(f1)
 for line in rf1 :
-        qlist.append(line[0])
-        print "QQQQQQQQQQ"
+        a.append(line[0])
         print line[0]
-        num +=1
+        print "AAAAAAAAAA"
 
-f2 = open("a.csv","r")
+f2 = open("QC1.csv","r")
 rf2 = csv.reader(f2)
-
-f3 = open("data-B-1.csv","w")
 for line2 in rf2 :
-        i = 0
-        while (i < 2) :
-                print qlist[i]
-                print line2[0]
-                if line2[0] == qlist[i] :
-                        f3.write(line2[0]+','+line2[1]+','+line2[2]+'\r\n')
-                        print line2[0]
-                i +=1
+        b.append(line2[0])
+        print line2[0]
+        print "BBBBBBBBBB"
+print "This is list a"
+print a
+
+print "This is list b"
+print b
+df = open("delet-A1.csv","w")
+for i in a:
+        if i not in b :
+                df.write(i+'\r\n')
+                print i
+                print "FFFFFFFFFFFFFFF"
+f1.close()
+f2.close()
+df.close()
