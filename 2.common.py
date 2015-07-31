@@ -1,4 +1,4 @@
-a = []
+
 b = []
 f1 = open("qdis.csv","r")
 r1 = csv.reader(f1)
